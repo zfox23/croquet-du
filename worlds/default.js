@@ -202,9 +202,9 @@ export function init(Constants) {
                 layers: ["light"],
                 type: "lighting",
                 behaviorModules: ["Light"],
-                fileName: "realistic_marshy_wetlands.exr",
-                dataLocation: "3csS6Jm2JfaaqKmCA9fvCFJUi8sK6ZeUNd41ApqdP6M4CxcXExBZTEwFCg8GEE0WEE0AEQwSFgYXTQoMTBZMNCYAAjQXJg4rJAdbNDUtOyEaNwIALgATMy0HUUwKDE0AEQwSFgYXTRMMERcCD00WEw8MAgdMUhtWDi9RJBQMJ1NSUjUUFwsSNTBVTgUmATNOMxcyMxEyGjk5VhYEGgsKW0wHAhcCTCEGGjlQGicAKzMXGQ8xVzkoJAYxVyZVVE4pJFEJBTxUNQgwPBAkCQ8EBhA",
-                dataType: "exr",
+                fileName: "realistic_marshy_wetlands_edit.jpg",
+                dataLocation: "3yjxdeopuAhjdIP4hlIJWDaZsI72e63apRA8D1PJJc4MEQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWLjwaGC4NPBQxPh1BLi83ITsALRgaNBoJKTcdS1YQFlcaCxYIDBwNVwkWCw0YFVcMCRUWGB1WTCsPFDVUIREsAQ8KPiZBPT8WCBNILBQ8PykXSU4pER8BND4BTh4mKzs1GlYdGA0YVjUTSUE2OxMyEA4ACCweNzMNLRUyG0gADU4xHEEaNSg7I09PMTI6LC4bFkE",
+                dataType: "jpg",
             }
         },
         {

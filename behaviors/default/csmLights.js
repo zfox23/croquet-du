@@ -62,6 +62,8 @@ class LightPawn {
             return assetManager.load(buffer, dataType, Microverse.THREE, options).then((texture) => {
                 let TRM = this.service("ThreeRenderManager");
                 let renderer = TRM.renderer;
+                // For sRGB JPG skyboxes
+                texture.encoding = Microverse.THREE.sRGBEncoding;
                 let scene = TRM.scene;
                 let pmremGenerator = new Microverse.THREE.PMREMGenerator(renderer);
                 pmremGenerator.compileEquirectangularShader();
