@@ -29,6 +29,34 @@ export function init(Constants) {
     Constants.DefaultCards = [
         {
             card: {
+                name: "entrance",
+                type: "object",
+                translation: [0, 3.6, 0],
+                spawn: "default"
+            },
+        },
+        {
+            card: {
+                translation: [0, 1.6785808116078789, -6],
+                rotation: [0, 0, 0, 1],
+                layers: ["pointer", "walk"],
+                name: "/Ducks.glb",
+                dataLocation: "3oidu3yIeWHCw9Ikd2yhTvrVpwfeS8LOZWYSixvk_qfEBxsbHxxVQEAJBgMKHEEaHEEMHQAeGgobQQYAQBpAKAs5DRYDJhwuBD4MLTcLXCgXDhkWGDokODY2XUAGAEEMHQAeGgobQQIGDB0AGQodHApAG1oOIzcoDl4gJRwsIi4uJhgAKVYjGilWOQYgOzYhWFc3JjwWCwAqX1sgGEALDhsOQCg9V1xdDjxXLRxWF1YEXS4CCQwcI1haCxsqIiYIDjslO0IpXg5XDAgsASo",
+                dataScale: [3, 3, 3],
+                fileName: "/Ducks.glb",
+                modelType: "glb",
+                shadow: true,
+                singleSided: true,
+                type: "3d",
+
+                placeholder: true,
+                placeholderSize: [25, 0.1, 25],
+                placeholderColor: 0x303030,
+                placeholderOffset: [0, 1.4, 0],
+            }
+        },
+        {
+            card: {
                 translation: [18.896780654109225, 5.946236671338315, -23.998003978611333],
                 scale: [1.7423383490435291, 1.7423383490435291, 1.7423383490435291],
                 rotation: [0, -0.7124679587820721, 0, 0.7017046442121554],
@@ -129,21 +157,6 @@ export function init(Constants) {
         },
         {
             card: {
-                translation: [0, 1.6785808116078789, -6],
-                rotation: [0, 0, 0, 1],
-                layers: ["pointer", "walk"],
-                name: "/Ducks.glb",
-                dataLocation: "3oidu3yIeWHCw9Ikd2yhTvrVpwfeS8LOZWYSixvk_qfEBxsbHxxVQEAJBgMKHEEaHEEMHQAeGgobQQYAQBpAKAs5DRYDJhwuBD4MLTcLXCgXDhkWGDokODY2XUAGAEEMHQAeGgobQQIGDB0AGQodHApAG1oOIzcoDl4gJRwsIi4uJhgAKVYjGilWOQYgOzYhWFc3JjwWCwAqX1sgGEALDhsOQCg9V1xdDjxXLRxWF1YEXS4CCQwcI1haCxsqIiYIDjslO0IpXg5XDAgsASo",
-                dataScale: [3, 3, 3],
-                fileName: "/Ducks.glb",
-                modelType: "glb",
-                shadow: true,
-                singleSided: true,
-                type: "3d",
-            }
-        },
-        {
-            card: {
                 translation: [-4.240664664755853, 4.518150900671051, 1.805644174351258],
                 scale: [3.946698516468886, 3.657358813175109, 1],
                 rotation: [0, 0.7069724915210387, 0, 0.7072410453533752],
@@ -206,14 +219,6 @@ export function init(Constants) {
                 dataLocation: "3yjxdeopuAhjdIP4hlIJWDaZsI72e63apRA8D1PJJc4MEQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWLjwaGC4NPBQxPh1BLi83ITsALRgaNBoJKTcdS1YQFlcaCxYIDBwNVwkWCw0YFVcMCRUWGB1WTCsPFDVUIREsAQ8KPiZBPT8WCBNILBQ8PykXSU4pER8BND4BTh4mKzs1GlYdGA0YVjUTSUE2OxMyEA4ACCweNzMNLRUyG0gADU4xHEEaNSg7I09PMTI6LC4bFkE",
                 dataType: "jpg",
             }
-        },
-        {
-            card: {
-                name: "entrance",
-                type: "object",
-                translation: [0, 3.6, 0],
-                spawn: "default"
-            },
         }
     ];
 }
