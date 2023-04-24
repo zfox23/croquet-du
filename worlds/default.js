@@ -23,7 +23,8 @@ export function init(Constants) {
     Constants.UserBehaviorModules = [
         "csmLights.js",
         "video.js",
-        "urlLink.js"
+        "urlLink.js",
+        "pool.js",
     ];
 
     Constants.DefaultCards = [
@@ -37,22 +38,57 @@ export function init(Constants) {
         },
         {
             card: {
+                name: "light",
+                layers: ["light"],
+                type: "lighting",
+                behaviorModules: ["Light"],
+                fileName: "realistic_marshy_wetlands_looking_up_from_the_gro.jpg",
+                dataLocation: "3sjwKkL2f_Ybk6tmj7qDYN1RkSXIV7ZiK5Oe0oSDQRagGwcHAwBJXFwVGh8WAF0GAF0QARwCBhYHXRocXAZcJDYQEiQHNh47NBdLJCU9KzEKJxIQPhADIz0XQVwaHF0QARwCBhYHXQMcAQcSH10GAx8cEhdcJkMjPDQnMhYEJjYkPiIcHEELJzBGQEI3EiIRRSoDIgoBNTkJGB4GQToXR1wXEgcSXAkRBj4hNQcaHxoJMBo9FiA2IQkDBT8GSx0QCwoQJgEBJzshHj4BNzdeBEc",
+
+                dataType: "jpg",
+            }
+        },
+        {
+            card: {
                 translation: [0, 1.6785808116078789, -6],
                 rotation: [0, 0, 0, 1],
                 layers: ["pointer", "walk"],
-                name: "/Ducks.glb",
-                dataLocation: "3oidu3yIeWHCw9Ikd2yhTvrVpwfeS8LOZWYSixvk_qfEBxsbHxxVQEAJBgMKHEEaHEEMHQAeGgobQQYAQBpAKAs5DRYDJhwuBD4MLTcLXCgXDhkWGDokODY2XUAGAEEMHQAeGgobQQIGDB0AGQodHApAG1oOIzcoDl4gJRwsIi4uJhgAKVYjGilWOQYgOzYhWFc3JjwWCwAqX1sgGEALDhsOQCg9V1xdDjxXLRxWF1YEXS4CCQwcI1haCxsqIiYIDjslO0IpXg5XDAgsASo",
+                fileName: "duck_dock.glb",
+                dataLocation: "3VYj9j4gZMxVaRpZ-dy4v2RyWVKSq-LsWIEZAK2XolxEPiIiJiVseXkwPzozJXgjJXg1JDknIzMieD85eSN5ARM1NwEiEzseETJuAQAYDhQvAjc1GzUmBhgyZHk_OXg1JDknIzMieCY5JCI3OngjJjo5NzJ5A2YGGRECFzMhAxMBGwc5OWQuAhVjZWcSNwc0YA8mBy8kEBwsPTsjZB8yYnkyNyI3eWJ7NxEVJSAJMDRkMToeHCVuIi44GD8eBToSJAUJIxpkHhsEFGceJWNmGRM",
                 dataScale: [3, 3, 3],
-                fileName: "/Ducks.glb",
                 modelType: "glb",
                 shadow: true,
                 singleSided: true,
                 type: "3d",
 
                 placeholder: true,
-                placeholderSize: [25, 0.1, 25],
+                placeholderSize: [50, 0.1, 50],
                 placeholderColor: 0x303030,
                 placeholderOffset: [0, 1.4, 0],
+            }
+        },
+        {
+            card: {
+                translation: [0, 1.6785808116078789, -6],
+                rotation: [0, 0, 0, 1],
+                layers: ["pointer"],
+                fileName: "duck_plants.glb",
+                dataLocation: "3u0I2P_DTlApDm8rkVx9K-b9EywA8bf0rz7A5GTNtLcoHQEBBQZPWloTHBkQBlsABlsWBxoEABABWxwaWgBaIjAWFCIBMBg9MhFNIiM7LTcMIRQWOBYFJTsRR1ocGlsWBxoEABABWwUaBwEUGVsABRkaFBFaIEUlOjIhNBACIDAiOCQaGkcNITZARkQxFCQXQywFJAwHMz8PHhgARzwRQVoRFAEUWh8kPA8HRgARIFhAMzNBHhQWGDkPEgQGARsMMBgaAwIXHzsbIBAtBiQ7GQY",
+                dataScale: [3, 3, 3],
+                modelType: "glb",
+                shadow: true,
+                singleSided: true,
+                type: "3d",
+            }
+        },
+        {
+            card: {
+                name: "pool",
+                type: "object",
+                translation: [0, -1.35, 0],
+                layers: ["pointer"],
+                behaviorModules: ["Pool"],
+                poolSize: [750, 750],
             }
         },
         {
@@ -90,7 +126,7 @@ export function init(Constants) {
                 singleSided: true,
                 textureLocation: "3LileRN9-pR8FlAR1WcB6SOC8lcPuaCb4jMHG62ohWgAJDg4PD92Y2MqJSApP2I5P2IvPiM9OSk4YiUjYzljNhk4OxwDNgo5Ax99ByUrARYleX91NAoIC3R8fmMlI2IvPiM9OSk4YiElLz4jOik-PyliICMvLSAoKTooKSotOSA4Y3woYXwWOik8Lwd5AyYUYSQefngnKAgEFX0mLgANDjQkPB0HNDQfH3UCDydjKC04LWMFCTQTdTQEFjkOASk9ei0DJhMneHg7OgU6Lhp6IBk-Ay0UHzgeGQZ7f2EF",
                 textureType: "image",
-                type: "2d",            
+                type: "2d",
                 cardURL: "https://www.ducks.org/get-involved",
                 behaviorModules: ["URLLink"],
             }
@@ -110,7 +146,7 @@ export function init(Constants) {
                 singleSided: true,
                 textureLocation: "3SzVk9gqZoUrFTbuLPBkSqCQBQgngVVfjXRFT6FgVZFsOycnIyBpfHw1Oj82IH0mIH0wITwiJjYnfTo8fCZ8KQYnJAMcKRUmHABiGDo0Hgk6ZmBqKxUXFGtjYXw6PH0wITwiJjYnfT46MCE8JTYhIDZ9PzwwMj83NiU3NjUyJj8nfGM3fmMJJTYjMBhmHDkLfjsBYWc4NxcbCmI5MR8SESs7IwIYKysAAGodEDh8NzInMnw5MRQ7JWYAYSUdNxg_PwAqG2EGAGIaZWcgChQ9Z34FEDArGDdmKmoQHCVr",
                 textureType: "image",
-                type: "2d",            
+                type: "2d",
                 cardURL: "https://donate.ducks.org/yearend/ye2022/donateOnlineSecure.aspx?promoKey=YearEnd22&ID=13457&_gl=1*1tmerfh*_ga*MTM4OTQ2MzI1Mi4xNjgyMDkyNTk1*_ga_2X0ECQZQ09*MTY4MjA5MjU5NS4xLjEuMTY4MjA5MzA2OS4wLjAuMA..&_ga=2.176813029.1555540810.1682092598-1389463252.1682092595&_gac=1.242492726.1682092636.EAIaIQobChMIpf_aqau7_gIVeAKzAB1I7QDdEAAYASAAEgINZ_D_BwE",
                 behaviorModules: ["URLLink"],
             }
@@ -130,7 +166,7 @@ export function init(Constants) {
                 singleSided: true,
                 textureLocation: "3tztx_Nim4JumKFF8_dcMzhjMtCzpPc79RpsIHRtrmSUHAAABAdOW1sSHRgRB1oBB1oXBhsFAREAWh0bWwFbDiEAAyQ7DjIBOydFPx0TOS4dQUdNDDIwM0xERlsdG1oXBhsFAREAWhkdFwYbAhEGBxFaGBsXFRgQEQIQERIVARgAW0QQWUQuAhEEFz9BOx4sWRwmRkAfEDA8LUUeFjg1NgwcBCU_DAwnJ006Nx9bEBUAFVsSFTciGxIkHiUBRhofHj81PT8mEBg_Jgc5HDoQOBJFQgM4AzgEQEAhNRk9",
                 textureType: "image",
-                type: "2d",            
+                type: "2d",
                 cardURL: "https://www.ducks.org/merchandise",
                 behaviorModules: ["URLLink"],
             }
@@ -150,7 +186,7 @@ export function init(Constants) {
                 singleSided: true,
                 textureLocation: "3X0F_CaK-tUXJcw5D531mt-SIidHfVT7yTu-XLEZ50tQMCwsKCtid3c-MTQ9K3YtK3Y7KjcpLT0sdjE3dy13Ig0sLwgXIh4tFwtpEzE_FQIxbWthIB4cH2BoancxN3Y7KjcpLT0sdjUxOyo3Lj0qKz12NDc7OTQ8PS48PT45LTQsd2g8dWgCLj0oOxNtFzIAdTAKamwzPBwQAWkyOhQZGiAwKAkTICALC2EWGzN3PDksOXcRbAAxFz45bXVtMg8MIDctKQwhBxUCbA4uMywcHwoxLy8SIQw5By5rLzBg",
                 textureType: "image",
-                type: "2d",             
+                type: "2d",
                 cardURL: "https://www.ducks.org/merchandise",
                 behaviorModules: ["URLLink"],
             }
@@ -207,17 +243,6 @@ export function init(Constants) {
                 textureWidth: 4096,
                 type: "2d",
                 width: 4,
-            }
-        },
-        {
-            card: {
-                name: "light",
-                layers: ["light"],
-                type: "lighting",
-                behaviorModules: ["Light"],
-                fileName: "realistic_marshy_wetlands_edit.jpg",
-                dataLocation: "3yjxdeopuAhjdIP4hlIJWDaZsI72e63apRA8D1PJJc4MEQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWLjwaGC4NPBQxPh1BLi83ITsALRgaNBoJKTcdS1YQFlcaCxYIDBwNVwkWCw0YFVcMCRUWGB1WTCsPFDVUIREsAQ8KPiZBPT8WCBNILBQ8PykXSU4pER8BND4BTh4mKzs1GlYdGA0YVjUTSUE2OxMyEA4ACCweNzMNLRUyG0gADU4xHEEaNSg7I09PMTI6LC4bFkE",
-                dataType: "jpg",
             }
         }
     ];
