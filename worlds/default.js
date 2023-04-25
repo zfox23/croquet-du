@@ -93,6 +93,26 @@ export function init(Constants) {
         },
         {
             card: {
+                translation: [3.503492864684127, 4.232111627944638, -28.14180164011017],
+                scale: [2.421978181378337, 2.421978181378337, 2.421978181378337],
+                rotation: [0, 0.0033499573640839928, 0, 0.999994388877087],
+                layers: ["pointer"],
+                behaviorModules: ["PDFView"],
+                name: "/Pages_from_2022-international-science-report-singles_compressed_1_1.pdf",
+                color: 8947848,    depth: 0.05,    fileName: "/Pages_from_2022-international-science-report-singles_compressed_1_1.pdf",
+                frameColor: 16777215,
+                fullBright: true,
+                height: 1,
+                modelType: "pdf",
+                pdfLocation: "3mGmCMoxJnLcvuBjAyoKpGVsDyCnHpIsjN8JzjZgkEAABRkZHR5XQkILBAEIHkMYHkMOHwIcGAgZQwQCQhhCFzgZGj0iFysYIj5cJgQKIDcEWF5UFSspKlVdX0IEAkMOHwIcGAgZQwAEDh8CGwgfHghDAQIODAEJCBsJCAsMGAEZQgwfFANYKl0yPSEHFChdCzIbJlo1PVVZXjUXWhcUHAwyO19VOFs1XF8VJAJCCQwZDEIVOS8KWRoXLwlYGh4JMlwAOR8CVCQyBxlUXCwnKyYfCAwJC1UAK1UsBSFd",
+                shadow: true,
+                singleSided: true,
+                type: "2d",
+                width: 0.7727272727272728,
+            }
+        },
+        {
+            card: {
                 translation: [18.896780654109225, 5.946236671338315, -23.998003978611333],
                 scale: [1.7423383490435291, 1.7423383490435291, 1.7423383490435291],
                 rotation: [0, -0.7124679587820721, 0, 0.7017046442121554],
