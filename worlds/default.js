@@ -154,10 +154,12 @@ export function init(Constants) {
         {
             card: {
                 translation: [4.231411586115633, 4.23322178202064, 1.7975868836197033],
-                scale: [2.0892454323579557, 2.0892454323579557, 2.0892454323579557],
+                scale: [2.974505246973397, 2.974505246973397, 2.974505246973397],
                 rotation: [0, -0.7161486536791454, 0, 0.6979477815951186],
                 layers: ["pointer"],
+                behaviorModules: ["URLLink"],
                 name: "/385x430_LatestGiftAD-year-end.png",
+                cardURL: "https://donate.ducks.org/yearend/ye2022/donateOnlineSecure.aspx?promoKey=YearEnd22&ID=13457&_gl=1*1tmerfh*_ga*MTM4OTQ2MzI1Mi4xNjgyMDkyNTk1*_ga_2X0ECQZQ09*MTY4MjA5MjU5NS4xLjEuMTY4MjA5MzA2OS4wLjAuMA..&_ga=2.176813029.1555540810.1682092598-1389463252.1682092595&_gac=1.242492726.1682092636.EAIaIQobChMIpf_aqau7_gIVeAKzAB1I7QDdEAAYASAAEgINZ_D_BwE",
                 cornerRadius: 0.02,
                 fileName: "/385x430_LatestGiftAD-year-end.png",
                 fullBright: true,
@@ -167,8 +169,6 @@ export function init(Constants) {
                 textureLocation: "3SzVk9gqZoUrFTbuLPBkSqCQBQgngVVfjXRFT6FgVZFsOycnIyBpfHw1Oj82IH0mIH0wITwiJjYnfTo8fCZ8KQYnJAMcKRUmHABiGDo0Hgk6ZmBqKxUXFGtjYXw6PH0wITwiJjYnfT46MCE8JTYhIDZ9PzwwMj83NiU3NjUyJj8nfGM3fmMJJTYjMBhmHDkLfjsBYWc4NxcbCmI5MR8SESs7IwIYKysAAGodEDh8NzInMnw5MRQ7JWYAYSUdNxg_PwAqG2EGAGIaZWcgChQ9Z34FEDArGDdmKmoQHCVr",
                 textureType: "image",
                 type: "2d",
-                cardURL: "https://donate.ducks.org/yearend/ye2022/donateOnlineSecure.aspx?promoKey=YearEnd22&ID=13457&_gl=1*1tmerfh*_ga*MTM4OTQ2MzI1Mi4xNjgyMDkyNTk1*_ga_2X0ECQZQ09*MTY4MjA5MjU5NS4xLjEuMTY4MjA5MzA2OS4wLjAuMA..&_ga=2.176813029.1555540810.1682092598-1389463252.1682092595&_gac=1.242492726.1682092636.EAIaIQobChMIpf_aqau7_gIVeAKzAB1I7QDdEAAYASAAEgINZ_D_BwE",
-                behaviorModules: ["URLLink"],
             }
         },
         {
